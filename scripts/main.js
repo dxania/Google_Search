@@ -1,9 +1,9 @@
 function check_input() { 
     var input=document.getElementById("userInput").value; 
-    if(input == true) { 
-        alert(input)
+    if(input == "") { 
+        alert("Type something");
         return false; 
     } else { 
-        alert("Type something");
+        alert(input)                
     } 
 } 

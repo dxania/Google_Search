@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="main.js"></script>
+    <script src="scripts/main.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -15,7 +15,7 @@
             <li style="float:left;"><a href="" >About</a></li>
             <li style="float:left;"><a href="">Store</a></li>
             <li><button class="userIcon">D</button></li>
-            <li><button class="ibutton"><i class="fa fa-bell"></i></button></li>
+            <li>1<button class="ibutton"><i class="fa fa-bell"></i></button></li>
             <li><a><i class="fa fa-th" style="color:rgb(119, 117, 117);"></i></a></li>
             <li><a href="">Images</a></li>
             <li><a href="">Mail</a></li>
@@ -25,9 +25,18 @@
     <section>
         <div class="container">
             <span class="blueFont">G</span><span class="redFont">o</span><span class="yellowFont">o</span><span class="blueFont">g</span><span class="greenFont">l</span><span class="redFont">e</span><br>
-            <input type="text" id="userInput"><br>
-            <input type="submit" style="position: absolute; left: -9999px"/>
-            <button class="bodyButton">Google Search</button>
+            
+                <input type="text" id="userInput"><br>
+                <!-- <input type="submit" onclick="check_input()" style="height: 0px; width: 0px; border: none; padding: 0px;" hidefocus="true" >             -->
+            <script>
+                // document.getElementById('userInput').addEventListener('keypress', function(event) {
+                //     if (event.keyCode == 13) {
+                //         event.preventDefault();
+                //     }
+                // });
+
+            </script>
+            <button class="bodyButton" onclick="check_input()">Google Search</button>
             <button class="bodyButton">I'm feeling lucky</button>
             <p>Google offered in: 
                 <a href="#">Luganda</a> 

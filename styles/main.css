@@ -126,6 +126,8 @@ input{
     color: white;
     width: 37px;
     height: 37px;
+    margin-top: 5px;
+    margin-right: 10px;
 }
 
 .ibutton{
@@ -135,6 +137,8 @@ input{
     color: white;
     width: 26px;
     height: 26px;
+    margin-top: 10px;
+    margin-right: 5px;
 }
 
 .ibutton i{
