@@ -20,27 +20,17 @@ html{
 }
 
 .navbar ul li{
-    /* display: inline;
-    
-    padding: 0; */
     float: right;
-    /* margin-right: 35px; */
 }
 
 .navbar ul li a {
     display: block;
-    /* text-align: center; */
     padding: 16px 10px;
     text-decoration: none;
     font-size: 14px;
     color: black;
     font-family: Arial, Helvetica, sans-serif; 
 }
-
-/* .navbar ul li button {
-    display: block;
-    padding: 16px 10px;
-} */
 
 .navbar ul li a, .navbar ul li button{
     cursor: pointer;
@@ -52,17 +42,13 @@ html{
 
 section{
     padding-top: 40px;
-    /* padding: 20px; */
     width: 100%;
 }
 
 .container{
     margin: auto;
     width: 50%;
-    /* border: 3px solid green; */
     padding: 150px;
-    /* margin-top: 5%; */
-
     text-align: center;
     font-size: 100px;
     font-family: Roboto,Arial,sans-serif;
@@ -76,6 +62,7 @@ section{
 .container p a{
     text-decoration: none;
 }
+
 .searchBox{
     margin: auto;
     width: 50%;
@@ -96,6 +83,7 @@ section{
 
 .redFont{
     color: rgb(250, 75, 75);
+    /* transform: rotate(90deg); */
     /* -webkit-transform: rotate(-20deg); 
    -moz-transform: rotate(-20deg); */
 }
@@ -115,8 +103,9 @@ input{
     padding: 12px 10px;
     border: none;
     border-color: black;
-    background: url("../images/Google_mic.svg.png") no-repeat scroll right 6px;
+    background: url("../images/Google_mic.svg.png") no-repeat scroll 520px 9px;
     padding-right:40px;
+    padding-left: 20px;
 }
 
 .userIcon{
@@ -127,7 +116,8 @@ input{
     width: 37px;
     height: 37px;
     margin-top: 5px;
-    margin-right: 10px;
+    margin-right: 30px;
+    margin-left: 10px;
 }
 
 .ibutton{
@@ -138,7 +128,8 @@ input{
     width: 26px;
     height: 26px;
     margin-top: 10px;
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .ibutton i{
@@ -157,8 +148,6 @@ input{
 
 .footer .footernav ul{
     list-style-type: none;
-    /* margin: 0;
-    padding: 0; */
     overflow: hidden;
 }
 
@@ -171,3 +160,13 @@ input{
     color: grey;
     font-family: Arial, Helvetica, sans-serif; 
 }
+
+@media screen and (max-width: 320px) {
+    .navbar {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      
+    }
+    .navbar ul li a{
+        padding: 2px 2px;
+    }
+  }
