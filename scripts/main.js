@@ -1,9 +1,21 @@
 function check_input() { 
-    var input=document.getElementById("userInput").value; 
-    if(input == "") { 
-        alert("Type something");
+
+    var inputValue =document.getElementById("userInput").value; 
+
+    if(inputValue == "") { 
+        document.getElementById("message").innerHTML = "Please type something!";
         return false; 
     } else { 
-        alert(input)                
+        userInput.onkeydown = function() {
+        document.getElementById("message").innerHTML = "";
+        }
+        document.getElementById("message").innerHTML = "";
+        swal({
+            // title: "Output", 
+            html: inputValue,  
+            confirmButtonText: "OK",
+            // allowOutsideClick: "true" 
+          });
+        // alert(inputValue)                
     } 
 } 
